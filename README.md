@@ -65,7 +65,6 @@ spec:
 ```
 
 # K8S Service
-
 ```
 apiVersion: v1
 kind: Service
@@ -81,3 +80,12 @@ spec:
     targetPort: 80
     
 ```
+
+# Referências
+
+https://kubernetes.io/
+
+https://kind.sigs.k8s.io/docs/user/quick-start/
+
+
+#
