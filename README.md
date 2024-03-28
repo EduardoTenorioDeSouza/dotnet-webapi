@@ -1,4 +1,4 @@
-# Deploy de aplicação ASP .NET Core 8 - Kubernetes
+# Deploy de aplicação WebApi Core 8 no Kubernetes(Kind)
 Criando e subindo uma aplicação web api net 8.0 no kubernetes com kind.
 
 # Dockerfile
