@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnetapi
+  labels:
+    app: dotnetapi
+spec:
+  selector:
+    matchLabels:
+      app: dotnetapi    
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: "dotnetapi"
+    spec:
+      containers:
+        - name: dotnetapi
+          image: "esouza/dotnet-webapi:latest"
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 250m
+              memory: 256Mi
+          ports:
+           - containerPort: 80
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://*:80
+          
